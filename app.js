@@ -15,7 +15,7 @@ app.use(express.static("public"));
 const { Sequelize, DataTypes } = require("sequelize");
 // const { db } = require("./models");
 const { Item, Consignor, Auction } = require("./models");
-const sequelize = new Sequelize("postgres://auction_management_app_user:Y7F8kE5H9TSoIJLY4NMye1bu91cYEoYL@dpg-cf87fe5a499fsd2e5va0-a/auction_management_app") // Example for postgres
+const sequelize = new Sequelize("postgres://auction_inventory_db_user:NxctnTqC1MZ5rwZIHISvlRq66JbYeClt@dpg-clnt8gsjtl8s73ah23lg-a.ohio-postgres.render.com/auction_inventory_db") // Example for postgres
 
 
 app.get("/inventory", (req, res) => {
